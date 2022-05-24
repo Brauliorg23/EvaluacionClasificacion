@@ -6,7 +6,7 @@ const {API_VERSION, IP_SERVER, PORT_DB} = require("./config");
 // mongoose.set("useFindAndModify", false);
 
 mongoose.connect(
-    `mongodb+srv://Brauliorg23:Bra23rg@cluster0.1l5zc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, 
+    `mongodb://${IP_SERVER}:${PORT_DB}/digitalenvironment`, 
     {useNewUrlParser: true, useUnifiedTopology: true},
     (err, res) =>{
         if(err){
