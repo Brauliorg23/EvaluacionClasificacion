@@ -1,2 +1,2 @@
-export const basePath ="http://159.223.206.18:3977/";
+export const basePath ="https://digital-environmental-a2.com/api";
 export const apiVersion = "v1";
