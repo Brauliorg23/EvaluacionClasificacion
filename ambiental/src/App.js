@@ -1,34 +1,11 @@
 import React from 'react';
-import {HashRouter, Route, Routes} from 'react-router-dom';
-import routes from "./config/routes";
-import AuthProvider from "./providers/AuthProvider";
-import './App.scss';
+import { Button } from 'antd';
+import './App.css';
 
-
-function App() {
-  
-  return (
-    <AuthProvider> 
-      <HashRouter>
-        <Routes>
-          {routes.map((route, index)=> (
-            <Route 
-            key={index} 
-            path={route.path} 
-            element={
-              <route.layout>
-                <route.component/>
-              </route.layout>
-            } 
-            />
-          ))}
-        </Routes>
-      </HashRouter>
-    </AuthProvider>
-    
-  );
-}
-
-
+const App = () => (
+  <div className="App">
+    <Button type="primary">Button</Button>
+  </div>
+);
 
 export default App;
